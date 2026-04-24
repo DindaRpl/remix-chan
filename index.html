@@ -150,14 +150,19 @@
   <!-- Top Navigation -->
   <header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
     <nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-      <div class="text-2xl font-bold text-primary tracking-tighter font-headline">Remix Chan</div>
+      <a class="text-2xl font-bold text-primary tracking-tighter font-headline cursor-pointer" href="#">
+        Remix Chan
+      </a>
       <div class="hidden md:flex items-center space-x-8 font-headline font-semibold text-sm tracking-wide">
-        <a class="text-primary border-b-2 border-primary pb-1" href="#">Menu</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 transition-all duration-300 hover:opacity-80"
+          href="#menu">
+          Menu</a>
         <a class="text-on-surface opacity-80 hover:text-primary transition-colors duration-300" href="#about">About</a>
+        <a class="text-on-surface opacity-80 hover:text-primary transition-colors duration-300" href="#faq">FAQ</a>
         <a class="text-on-surface opacity-80 hover:text-primary transition-colors duration-300"
           href="#location">Location</a>
-        <a class="text-on-surface opacity-80 hover:text-primary transition-colors duration-300" href="#faq">FAQ</a>
       </div>
+
       <div class="flex items-center space-x-4">
         <a href="https://wa.me/6282337760607?text=Halo%20Remix%20Chan,%20saya%20mau%20tanya%20tentang%20menunya"
           target="_blank"
@@ -292,72 +297,85 @@
       </div>
     </section>
     <!-- Products Section -->
-    <section class="py-24 px-6 bg-surface-container-lowest">
+    <section id="menu" class="py-24 px-6 bg-surface-container-lowest scroll-mt-20">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-headline font-extrabold text-on-surface mb-4">Menu Terfavorit</h2>
           <div class="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
         </div>
+
         <div class="grid md:grid-cols-3 gap-10">
-          <!-- Product 1 -->
           <div class="group">
-            <div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-6 shadow-sm">
+            <div class="relative aspect-[4/5] rounded-2xl overflow-hidden mb-6 shadow-md border border-slate-100">
               <img alt="Tenderloin Steak"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 src="menu1.png" />
-
               <div
                 class="absolute top-4 right-4 bg-primary text-white px-4 py-1.5 rounded-full font-bold text-sm shadow-lg z-10">
                 Rp 44k
               </div>
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <button
+                  class="bg-white text-primary px-6 py-2 rounded-full font-bold shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">Pesan
+                  Sekarang</button>
+              </div>
             </div>
-
             <div class="mb-2">
-              <h3 class="text-2xl font-headline font-bold">Tenderloin Steak</h3>
+              <h3 class="text-2xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">
+                Tenderloin Steak</h3>
             </div>
             <p class="text-on-surface-variant leading-relaxed text-sm">
               Daging tenderloin lembut dengan saus rahasia, disajikan panas di atas hot-plate. Mewah, juicy, dan tetap
               hemat!
             </p>
           </div>
-          <!-- Product 2 -->
+
           <div class="group">
-            <div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-6 shadow-sm">
+            <div class="relative aspect-[4/5] rounded-2xl overflow-hidden mb-6 shadow-md border border-slate-100">
               <img alt="Chasu Ramen"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 src="menu2.png" />
-
               <div
                 class="absolute top-4 right-4 bg-primary text-white px-4 py-1.5 rounded-full font-bold text-sm shadow-lg z-10">
                 Rp 19k-24k
               </div>
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <button
+                  class="bg-white text-primary px-6 py-2 rounded-full font-bold shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">Pesan
+                  Sekarang</button>
+              </div>
             </div>
-
             <div class="mb-2">
-              <h3 class="text-2xl font-headline font-bold">Chasu Ramen</h3>
+              <h3 class="text-2xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">
+                Chasu Ramen</h3>
             </div>
-
             <p class="text-on-surface-variant leading-relaxed text-sm">
               Mie kenyal dengan kuah kaldu autentik dan ayam chasu empuk. Kehangatan sempurna di setiap seruputan!
             </p>
           </div>
-          <!-- Product 3 -->
+
           <div class="group">
-            <div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-6 shadow-sm">
+            <div class="relative aspect-[4/5] rounded-2xl overflow-hidden mb-6 shadow-md border border-slate-100">
               <img alt="Beef Pepper Rice"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 src="menu3.png" />
-
               <div
                 class="absolute top-4 right-4 bg-primary text-white px-4 py-1.5 rounded-full font-bold text-sm shadow-lg z-10">
                 Rp 30k
               </div>
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <button
+                  class="bg-white text-primary px-6 py-2 rounded-full font-bold shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">Pesan
+                  Sekarang</button>
+              </div>
             </div>
-
             <div class="mb-2">
-              <h3 class="text-2xl font-headline font-bold">Beef Pepper Rice</h3>
+              <h3 class="text-2xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">
+                Beef Pepper Rice</h3>
             </div>
-
             <p class="text-on-surface-variant leading-relaxed text-sm">
               Irisan daging sapi premium, jagung manis, dan telur mata sapi dengan aroma lada hitam yang menggoda.
               Gurihnya bikin nagih!
